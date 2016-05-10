@@ -18,7 +18,7 @@ if [ \! -d libpng-1.6.21 ]; then
 fi
 cd libpng-1.6.21
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 make install
 cd ..
@@ -31,7 +31,7 @@ if [ \! -d jpeg-6b ]; then
 fi
 cd jpeg-6b
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 cp libjpeg.a $LIBPATH/lib
 cp $SCUMMVMDEV/patches/jconfig.h $LIBPATH/include
@@ -48,7 +48,7 @@ if [ \! -d libogg-1.3.2 ]; then
 fi
 cd libogg-1.3.2
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 make install
 cd ..
@@ -60,7 +60,7 @@ if [ \! -d libmad-0.15.1b ]; then
 fi
 cd libmad-0.15.1b
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH --enable-speed --enable-fpm=arm --disable-aso
+./configure --host=arm --prefix=$LIBPATH --enable-speed --enable-fpm=arm --disable-aso
 make
 make install
 cd ..
@@ -70,7 +70,7 @@ if [ \! -d Tremor ]; then
 fi
 cd Tremor
 make distclean
-./autogen.sh --host=$ARCH --prefix=$LIBPATH --enable-low-accuracy --enable-64kHz-limit
+./autogen.sh --host=arm --prefix=$LIBPATH --enable-low-accuracy --enable-64kHz-limit
 make
 make install
 cd ..
@@ -82,7 +82,7 @@ if [ \! -d libvorbis-1.3.5 ]; then
 fi
 cd libvorbis-1.3.5
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 make install
 cd ..
@@ -94,7 +94,7 @@ if [ \! -d flac-1.2.1 ]; then
 fi
 cd flac-1.2.1
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH --disable-largefile --disable-thorough-tests --disable-doxygen-docs --disable-xmms-plugin --disable-cpplibs --disable-ogg --disable-oggtest --disable-rpath
+./configure --host=arm --prefix=$LIBPATH --disable-largefile --disable-thorough-tests --disable-doxygen-docs --disable-xmms-plugin --disable-cpplibs --disable-ogg --disable-oggtest --disable-rpath
 make
 make install
 cd ..
@@ -106,7 +106,7 @@ if [ \! -d libtheora-1.1.1 ]; then
 fi
 cd libtheora-1.1.1
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH --with-ogg=$LIBPATH --disable-examples
+./configure --host=arm --prefix=$LIBPATH --with-ogg=$LIBPATH --disable-examples
 make
 make install
 cd ..
@@ -118,7 +118,7 @@ if [ \! -d faad2-2.7 ]; then
 fi
 cd faad2-2.7
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 make install
 cd ..
@@ -130,7 +130,7 @@ if [ \! -d freetype-2.6.2 ]; then
 fi
 cd freetype-2.6.2
 make distclean
-./configure --host=$ARCH --prefix=$LIBPATH
+./configure --host=arm --prefix=$LIBPATH
 make
 make install
 cd ..
