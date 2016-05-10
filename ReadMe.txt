@@ -6,8 +6,7 @@ Install Android sdk&ndk (i unpacked it into ~/android directory)
 http://developer.android.com/ndk/downloads/index.html
 https://developer.android.com/sdk/index.html
 
-run sdk manager and downloads
-Now via Android SDK Manager (for call sdk manager via console type android). We need download latest version:
+Run Android SDK Manager and download:
 Android SDK Tools
 Android SDK Platform-tools
 Android SDL Build tools
