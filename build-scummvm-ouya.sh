@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ARCH=armeabi
+ARCH=armeabi-v7a
 
 . android-$ARCH.sh
 
@@ -19,7 +19,7 @@ LDFLAGS=-L$LIBPATH/lib
 
 cd $ARCH
 if [ \! -f config.mk ] ; then
-../configure --host=android --enable-vkeybd --enable-release
+../configure --host=ouya --enable-vkeybd  --enable-release
 fi
 make
 

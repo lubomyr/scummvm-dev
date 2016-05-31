@@ -19,7 +19,7 @@ LDFLAGS=-L$LIBPATH/lib
 
 cd $ARCH
 if [ \! -f config.mk ] ; then
-../configure --host=android-v7a --enable-vkeybd --disable-all-engines --enable-engine=scumm
+../configure --host=android-v7a --enable-vkeybd  --enable-release
 fi
 make
 
